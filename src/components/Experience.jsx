@@ -27,7 +27,7 @@ const Experience = () => {
 
     const experiences = [
         {
-            title: 'Front End Developer',
+            title: 'Front End Engineer',
             company: 'Zyaud Technology Ltd.',
             period: 'Mar 2020 - Aug 2025',
             description: [
@@ -49,7 +49,7 @@ const Experience = () => {
             ]
         },
         {
-            title: 'Front End Web Developer',
+            title: 'Front End Engineer',
             company: 'Evilnut Creative Technology Ltd.',
             period: 'Jan 2015 - Sep 2019',
             description: [
@@ -65,8 +65,8 @@ const Experience = () => {
         <section id="experience" ref={sectionRef} className="py-20 px-4 bg-slate-800/20">
             <div className="container mx-auto">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Work Experience</h2>
-                <p className="text-slate-400 text-center max-w-2xl mx-auto mb-12">
-                    Over 8 years of professional experience in front-end development and web technologies.
+                <p className="text-slate-400 text-center max-w-3xl mx-auto mb-12">
+                    Over 8 years of professional experience in front-end development and web application technologies.
                 </p>
 
                 <div className="max-w-4xl mx-auto">

@@ -176,3 +176,97 @@
     page-break-after: always;
   }
 }
+
+.code-highlight {
+  @apply bg-slate-900 rounded-lg overflow-hidden border border-slate-700;
+}
+
+.code-header {
+  @apply bg-slate-800 px-4 py-2 border-b border-slate-700 flex items-center justify-between;
+}
+
+.code-body {
+  @apply p-4 overflow-x-auto text-slate-300 font-mono text-sm;
+}
+
+/* 语法高亮颜色 */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #6a737d;
+}
+
+.token.punctuation {
+  color: #d6deeb;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #ff8383;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #a5d6ff;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #d6deeb;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #ffa657;
+}
+
+.token.function,
+.token.class-name {
+  color: #5eead4;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #ffd700;
+}
+
+/* 标签页动画 */
+.tab-content {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 截图预览动画 */
+.screenshot-preview {
+  transition: all 0.3s ease;
+}
+
+.screenshot-thumbnail:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}

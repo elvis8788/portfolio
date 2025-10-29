@@ -28,12 +28,12 @@ const Skills = () => {
     const skillCategories = [
         {
             title: 'Front-End Frameworks/Libraries',
-            skills: ['React.js', 'Vue.js', 'TypeScript', 'ES6+'],
+            skills: ['React.js', 'Vue.js', 'TypeScript', 'JavaScript (ES6+)'],
             color: 'from-blue-500 to-cyan-500'
         },
         {
             title: 'Build Tools',
-            skills: ['Vite', 'Webpack', 'Babel'],
+            skills: ['Vite', 'Webpack', 'Babel', 'CI/CD'],
             color: 'from-green-500 to-emerald-500'
         },
         {
@@ -43,14 +43,14 @@ const Skills = () => {
         },
         {
             title: 'UI/Styling',
-            skills: ['CSS', 'SCSS/SASS', 'Bootstrap', 'Tailwind CSS', 'Element UI', 'Ant Design'],
+            skills: ['CSS', 'SCSS/SASS', 'Bootstrap', 'Tailwind CSS', 'Element UI', 'Ant Design','TDesign'],
             color: 'from-orange-500 to-red-500'
         },
         {
-            title: 'Tools & Others',
+            title: 'Version Control & Collaboration:',
             skills: ['Git', 'GitHub', 'GitLab', 'RESTful APIs', 'Performance Optimization'],
             color: 'from-yellow-500 to-amber-500'
-        }
+        },
     ]
 
     return (
