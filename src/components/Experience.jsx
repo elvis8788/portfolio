@@ -31,10 +31,12 @@ const Experience = () => {
             company: 'Zyaud Technology Ltd.',
             period: 'Mar 2020 - Aug 2025',
             description: [
-                'Designed and implemented the Project Analysis & Comparison function supporting multi-dimensional data.',
-                'Implemented an Offline Map Real-time Monitoring feature to address geospatial visualization needs.',
-                'Collaborated closely with Product Managers in requirement analysis and solution design.',
-                'Utilized Webpack for modular bundling, code splitting, and performance optimization.'
+                'Developed real-time monitoring and visualization modules using Vue 3 and WebSocket, supporting multi-user collaboration and event-based updates.',
+                'Integrated with APIs and optimized asynchronous data flows for better system stability and responsiveness.',
+                'Designed and implemented dashboard-style UIs with interactive charts, data tables, and patient-like case management workflows.',
+                'Collaborated with backend and QA teams to ensure high availability and regulatory compliance for enterprise systems.',
+                'Applied lazy loading and modular code splitting, achieving a 30% improvement in initial load time.',
+                'Supported remote team collaboration through Git, CI/CD pipelines, and daily async standups.',
             ]
         },
         {
@@ -55,8 +57,8 @@ const Experience = () => {
             description: [
                 'Developed frontend functionalities and visual effects for internal projects and the official company website.',
                 'Maintained and optimized performance, user experience, and responsive layouts.',
-                'Ensured website security through regular updates and maintenance.',
-                'Customized and delivered SDK source files and libraries based on project requirements.'
+                'Ensured cross-browser compatibility, UI accessibility, and frontend security (input validation, HTTPS enforcement).',
+                'Collaborated with designers and backend engineers to refine product features in Agile sprints.'
             ]
         }
     ]
