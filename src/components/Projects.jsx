@@ -2,11 +2,9 @@ import { useState, useEffect, useRef } from 'react'
 import { EyeIcon, CodeBracketIcon, ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline'
 
 // 导入项目截图
-import workShop from '../assets/projects/supervisionSystem/workshop.png'
 import detail from '../assets/projects/supervisionSystem/detail.png'
 import roster from '../assets/projects/supervisionSystem/roster.png'
 
-import dashboard from '../assets/projects/psb/dashboard.png'
 import audit from '../assets/projects/psb/audit.png'
 import approve from '../assets/projects/psb/approve.png'
 
@@ -51,18 +49,12 @@ const Projects = () => {
             screenshots: [
                 {
                     id: 1,
-                    title: 'Dashboard Overview',
-                    description: 'Main dashboard with data visualization and key metrics',
-                    image: workShop
-                },
-                {
-                    id: 2,
                     title: 'Analytics Panel',
                     description: 'Analytics and reporting interface for decision making',
                     image: detail
                 },
                 {
-                    id: 3,
+                    id: 2,
                     title: 'Talent Management',
                     description: 'Comprehensive talent tracking and development management system',
                     image: roster
@@ -172,18 +164,12 @@ async function handleReplace(data) {
             screenshots: [
                 {
                     id: 1,
-                    title: 'Officer Dashboard',
-                    description: 'Main oversight dashboard with key metrics and alerts',
-                    image: dashboard
-                },
-                {
-                    id: 2,
                     title: 'Audit Flow',
                     description: 'Streamlined audit process with step-by-step guidance and tracking',
                     image: audit
                 },
                 {
-                    id: 3,
+                    id: 2,
                     title: 'Approve Flow',
                     description: 'Efficient approval workflow with automated notifications and status updates',
                     image: approve
@@ -383,7 +369,7 @@ const ProjectDetail = ({ project, index, isVisible }) => {
             </div>
 
             {/* 内容区域 */}
-            <div className="p-6">
+            <div className="p-6 w-3/4 m-auto">
                 {activeTab === 'preview' && <ProjectPreview project={project} />}
                 {activeTab === 'code' && <ProjectCode project={project} />}
             </div>
@@ -463,7 +449,7 @@ const ProjectPreview = ({ project }) => {
 
             {/* 截图缩略图 */}
             {project.screenshots.length > 1 && (
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid grid-cols-2 gap-4">
                     {project.screenshots.map((screenshot, index) => (
                         <button
                             key={screenshot.id}
